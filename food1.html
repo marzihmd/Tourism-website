@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #cc1919;
+        color: white;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+</style>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage1.html" class="active">Home</a>
+        <a href="shopping1.html">Shopping</a>
+        <a href="sightseeing1.html">Sightseeing</a>
+        <a href="food1.html">Food</a>
+        <a href="about us1.html">About us</a>
+        <a href="pictures1.html">Pictures</a>
+        <a href="Video1.html">Video</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</header>
+
+<body style=" background-color: black;">
+    <h3 style="text-align: center; color: white;">Buckingham Palace Tour and Afternoon Tea </h3>
+    <p style="text-align: center; margin-left: 40px; margin-right: 40px; color: white;"><br>Combine two London must-do
+        activities with a Buckingham Palace Tour and Afternoon Tea this summer. Feel like royalty as you wander the
+        grand and iconic 19 State Rooms in Buckingham Palace,
+        the official residence of King Charles III. End the day with afternoon tea,
+        the ultimate British tradition,
+        delighting your senses with delicious savoury treats and sweet freshly baked goods. <br><br></p>
+    <img style="margin-left: 50px;" class="afternoon tea"
+        src="afternoon-tea-bus-tour-of-london-and-its-famous-landmarks-640x360.jpg">
+    <img class="buckingham palace" src="afternoon-tea-bus-tour-in-london-visit-london.jpg">
+    <img style="margin-left: 350px; margin-top: 15px;" class="teatime"
+        src="buckingham-palace-tour-and-afternoon-tea_buckingham-palace-tour-and-afternoon-tea-on-the-panoramic-bus-image-courtesy-of-golden-tours_b404b287cf1493da638e0923b44483c5.jpg">
+    <section class="second">
+        <h3 style="text-align: center; color: white; margin-top: 300px;">Chinatown </h3>
+        <p style="text-align: center; margin-left: 40px; color: white; margin-right: 40px;">Chinatown in London is a
+            vibrant and culturally rich area located in the heart of the West End,
+            near Leicester Square and Soho. It is a bustling hub known for its Chinese restaurants,
+            shops,
+            and cultural festivities. <br><br>Restaurants:<br>Chinatown boasts a wide array of Chinese and East Asian
+            restaurants offering diverse cuisines from different regions of China and beyond,
+            including dim sum,
+            Szechuan,
+            Cantonese,
+            and more.<br><br>Shops:<br>There are numerous Asian supermarkets,
+            bakeries,
+            and specialty stores selling Chinese goods,
+            including traditional medicine,
+            herbs,
+            teas,
+            and gifts.<br><br>Cultural Sites:<br>The area features several Chinese cultural landmarks,
+            including pagodas,
+            Chinese gates (paifangs),
+            and decorations,
+            especially during Chinese New Year.</p>
+        <img style="width: 400px; height: 600px; margin-left: 130px;" class="chinese food" src="china town.jpeg">
+        <img style="width: 400px; height: 600px;" src="Carnaby.jpeg">
+        <img style="width: 400px; height: 600px;" class="china town" src="Chinese Food.jpeg">
+        </h4>
+    </section><br>
+    <h3 style="text-align: center; font-size: 40px; color: white;">Let's Go</h3>
+    <div class="column">
+        <div class="card">
+            <img src="c81d8aba83a79a4f5805e987ccd63b74ed0e8210 copy.webp" alt="shopping"
+                style="width:100%; height: 500px">
+            <div class="container">
+                <h2>Restaurants</h2>
+                <a href="https://www.coventgarden.london/eat/restaurants/">
+                    <p><button class="button">Restaurants</button></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="0c52d9eac0f32d04694666743e147acb5d7fef9c.webp" alt="Drinking" style="width:100%; height: 600px">
+            <div class="container">
+                <h2>Drink</h2>
+                <a href="https://www.coventgarden.london/eat/bars-pubs/">
+                    <p><button class="button">Drinks</button></p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="Find & Hire food photographers, stylists, directors _ PHOODE_com.jpeg" alt="coffee"
+                style="width:100%; height: 630px">
+            <div class="container">
+                <h2>coffee</h2>
+                <a href="food1.html">
+                    <p><button class="button">Coffees</button></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Important link from source https: //bootsnipp.com/snippets/rlXdE-->
+<style>
+    /* Footer */
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    section {
+        padding: 60px 0;
+    }
+
+    section .section-title {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    #footer {
+        background: #000000 !important;
+    }
+
+    #footer h5 {
+        padding-left: 10px;
+        border-left: 3px solid #eeeeee;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    #footer a {
+        color: #ffffff;
+        text-decoration: none !important;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    #footer ul.social li {
+        padding: 3px 0;
+    }
+
+    #footer ul.social li a i {
+        margin-right: 5px;
+        font-size: 25px;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
+    }
+
+    #footer ul.social li:hover a i {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+
+    #footer ul.social li a,
+    #footer ul.quick-links li a {
+        color: #ffffff;
+    }
+
+    #footer ul.social li a:hover {
+        color: #eeeeee;
+    }
+
+    #footer ul.quick-links li {
+        padding: 3px 0;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
+    }
+
+    #footer ul.quick-links li:hover {
+        padding: 3px 0;
+        margin-left: 5px;
+        font-weight: 700;
+    }
+
+    #footer ul.quick-links li a i {
+        margin-right: 5px;
+    }
+
+    #footer ul.quick-links li:hover a i {
+        font-weight: 700;
+    }
+
+    @media (max-width:767px) {
+        #footer h5 {
+            padding-left: 0;
+            border-left: transparent;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="Homepage1.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="about us1.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="pictures1.html"><i class="fa fa-angle-double-right"></i>Pictures</a></li>
+                    <li><a href="Video1.html"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a
+                Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis,
+                MN]</p>
+            <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
+                    target="_blank">Sunlimetech</a></p>
+        </div>
+        </hr>
+    </div>
+    </div>
+
+</section>
+
+</html>
